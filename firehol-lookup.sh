@@ -1,6 +1,7 @@
 #!/bin/bash
 RUNDATE="$(date "+%Y-%m-%d")"
 echo $RUNDATE
+mkdir $RUNDATE
 cd $RUNDATE
 echo "dest_ip,threat_list_name" > firehol-lookup.csv
 for netsetfilename in *.*set; do
